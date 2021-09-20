@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO DE GATO</title>
+    <style type = "text/css">
+
+    section#inicial{
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    article#comandos{
+        display:inline-block;       
+        min-height: 300px;
+        vertical-align: top;
+        width: 25%;
+    }
+
+    article#Gato{
+        border: 1px solid lightblue;
+        display: inline-block;
+        margin: 1em;
+        text-align: center;
+        width: 50%;
+    }
+    .campo{
+        background-color: mediumblue;
+        font-size: 3em;
+        height: 120px;
+        margin: 1px;
+        width: 120px;
+    }
+    .boton1{
+        font-size: 0.8em;
+        margin-top: 2em;
+        padding: 0.7; 
+        text-align: center;
+    }
+    .textojugadores{
+        font-size: 1em;
+        margin: 0.5em;
+        padding: 0.1;
+    }
+    label{
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .botonInicial{
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        color: lightgreen;
+        background-color: lightgreen;
+    }
+    .botonRetado1{
+        color: maroon;
+        background-color: maroon;
+    }
+    .botonRetador2{
+        color: orange;
+        background-color: orange;
+    }
+    </style>
+
+</head>
+<body>
+    <div align = "center"> 
+        <h1>BIENVENIDO A SU JUEGO FAVORITO GATO</h1>
+        <div align = "left">
+            <section id="inicial">
+                <article id ="comandos">
+                 Retador 1:
+                <input type="text" class = "textojugadores" id= "Retador 1"><br>
+                Retador 2:
+                <input type="text" class = "textojugadores" id = "Retador 2"><br>
+                <input type = "button" class = "boton1" id ="iniciar" value = "comenzar">
+                <label id= "TurnoJugador"></label>
+            </article>
+                <article = id = "Gato">
+                    <div align ="center">
+                    <input type="button" class = "campo" id = "cuadro1" onclick="colocar(this)">
+                    <input type="button" class = "campo" id = "cuadro2" onclick="colocar(this)">
+                    <input type="button" class = "campo" id = "cuadro3" onclick="colocar(this)"><br>
+
+                    <input type="button" class = "campo" id = "cuadro4" onclick="colocar(this)">
+                    <input type="button" class = "campo" id = "cuadro5" onclick="colocar(this)">
+                    <input type="button" class = "campo" id = "cuadro6" onclick="colocar(this)"><br>
+
+                    <input type="button" class = "campo" id = "cuadro7" onclick="colocar(this)">
+                    <input type="button" class = "campo" id = "cuadro8" onclick="colocar(this)">
+                    <input type="button" class = "campo" id = "cuadro9" onclick="colocar(this)"><br>
+
+                    </div>
+                </article>
+
+    
+            </section>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
