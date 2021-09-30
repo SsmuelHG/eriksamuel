@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <title>PruebaGrafica</title>
+</head>
+<body>
+    <canvas id ="myChart" width="10" height="10"></canvas>
+</body>
+<script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+var myChart = new Chart(ctx,{
+    type:"pie",
+    data:{
+        labels:['Manzana 🍎','Sandia 🍉','Mango 🥭','Platano 🍌','Melon 🍈'],
+        datasets:[{
+            label:"Ventas al Mes de la Veduleria La Bellota",
+            data:[10,9,15,7,20],
+            backgroundColor:[
+                'rgb(255, 51, 0)',
+                'rgb(102, 255, 51)',
+                'rgb(255, 153, 0)',
+                'rgb(255, 255, 0)',
+                'rgb(255, 153, 51)'
+            ]
+        }]
+    }
+});
+</script>
+</html>
